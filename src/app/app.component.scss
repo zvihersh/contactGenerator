@@ -67,16 +67,22 @@
     }
     .sidebar{
         flex-direction: row!important;
+        width: 100%!important;
         .avatar{
             width: 72px!important;
             height: 72px!important;
+            flex-shrink: 0;
         }
         .spinner-wrapper{
             width: 106px!important;
             height: 106px!important;
         }
         .username-input {
+            width: 40%;
             flex-grow: 1;
+            .input-wrapper{
+                width: 100%;
+            }
         }
     }
 }
