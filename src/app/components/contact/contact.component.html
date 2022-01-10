@@ -1,0 +1,7 @@
+<div *ngIf="contact" class="contact-wrapper">
+    <p *ngIf="contact.username">username: {{contact.username}}</p>
+    <div class="avatar" *ngIf="contact.imageUrl" [innerHtml]="contact.imageUrl"></div>
+    <p *ngIf="contact.firstName">First Name: {{contact.firstName}}</p>
+    <p *ngIf="contact.lastName">Last Name: {{contact.lastName}}</p>
+    <p *ngIf="contact.email">Email: {{contact.email}}</p>
+</div>
